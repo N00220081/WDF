@@ -1,0 +1,7 @@
+;/*FB_PKG_DELIM*/
+
+__d("XPolarisStoriesMediaControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f,g){a=c("jsRouteBuilder")("/stories/{username}/{?initial_media_id}/",Object.freeze({show_boost_modal:!1}),void 0);b=a;g["default"]=b}),98);
+__d("usePolarisStoriesV3OpenUserReel",["XPolarisStoriesMediaControllerRouteBuilder","react","useCometRouterDispatcher"],(function(a,b,c,d,e,f,g){"use strict";var h;b=h||d("react");var i=b.useCallback,j=b.useEffect,k=1;function a(b,a){var d=c("useCometRouterDispatcher")(),e=c("XPolarisStoriesMediaControllerRouteBuilder").buildUri({r:k,username:b}).toString();j(function(){d==null?void 0:d.prefetchRouteDefinition(e)},[d,e]);return i(function(){return d==null?void 0:d.go(e,{passthroughProps:{loggingModule:a}})},[d,e,a])}g["default"]=a}),98);
+__d("isNullish",[],(function(a,b,c,d,e,f){"use strict";function a(a){return a===void 0||a===null}f["default"]=a}),66);
+__d("shallowArrayEqual",["isNullish"],(function(a,b,c,d,e,f,g){function a(a,b){if(a===b)return!0;if(c("isNullish")(a)||c("isNullish")(b)||a.length!==b.length)return!1;for(var d=0,e=a.length;d<e;d++)if(a[d]!==b[d])return!1;return!0}g["default"]=a}),98);
+__d("useStableValue",["I64","react"],(function(a,b,c,d,e,f,g){"use strict";var h,i,j=(h||d("react")).useRef;function a(a){return k(a,(i||(i=d("I64"))).equal)}function k(a,b){var c=j(a);b(c.current,a)||(c.current=a);return c.current}g.useStableI64=a;g.useStableValue=k}),98);
