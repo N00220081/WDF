@@ -6,7 +6,7 @@
 $primary: #2B2B2E;
 $secondary: #FF6347;
 $success: #5b7f6a;
-$info: #ffffff;
+$info: #D3D2CC;
 $warning: #b19360;
 $danger:  #916d6d;
 $light: #F0EFEA;
@@ -29,17 +29,9 @@ ul.list-unstyled li a {
     text-decoration: underline;
   }
 
-
-
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.my-bg{
-    background-image: url(/images/sub-sandwiches-hor.webp);
-    background-repeat: no-repeat;
-    background-position: right;
-  z-index: 10;
-}
